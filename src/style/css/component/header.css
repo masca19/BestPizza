@@ -1,7 +1,7 @@
 header {
   position: absolute;
-  top: -40px;
   width: 100%;
+  top: -20px;
   margin-bottom: 40px;
   font-size: 1.5rem; }
 
@@ -9,7 +9,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
   margin: 0 auto;
   padding: 0 30px;
   color: white; }
@@ -17,7 +16,11 @@ header {
     display: flex;
     align-items: center; }
     .headerWrapper .imglogo img {
-      width: 300px; }
+      width: 400px;
+      object-fit: initial; }
+      @media (max-width: calc(768px - 1px)) {
+        .headerWrapper .imglogo img {
+          width: 225px; } }
   .headerWrapper ul {
     display: flex; }
   .headerWrapper li {

@@ -122,8 +122,8 @@ select {
 
 header {
   position: absolute;
-  top: -40px;
   width: 100%;
+  top: -20px;
   margin-bottom: 40px;
   font-size: 1.5rem; }
 
@@ -131,7 +131,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
   margin: 0 auto;
   padding: 0 30px;
   color: white; }
@@ -139,7 +138,11 @@ header {
     display: flex;
     align-items: center; }
     .headerWrapper .imglogo img {
-      width: 300px; }
+      width: 400px;
+      object-fit: initial; }
+      @media (max-width: calc(768px - 1px)) {
+        .headerWrapper .imglogo img {
+          width: 225px; } }
   .headerWrapper ul {
     display: flex; }
   .headerWrapper li {
@@ -165,6 +168,7 @@ header {
   color: white;
   font-size: 1.5rem; }
   .fullScreen h3 {
+    font-size: 1.8rem;
     padding: 0 90px;
     text-align: center;
     text-shadow: 0px 0px 8px black; }
@@ -336,31 +340,27 @@ header {
     flex-direction: column; }
     @media (min-width: 1200px) {
       .ordinaQui .allInfoWrapper {
-        flex-direction: row; } }
+        flex-direction: row;
+        max-width: 800px; } }
   .ordinaQui .infoContainer {
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center; }
     @media (min-width: 1200px) {
       .ordinaQui .infoContainer {
         display: block;
         width: 50%;
         padding-right: 40px; } }
-    @media (max-width: calc(1024px - 1px)) {
-      .ordinaQui .infoContainer {
-        display: block;
-        text-align: center; } }
     .ordinaQui .infoContainer > div {
-      margin-bottom: 20px;
+      margin-bottom: 40px;
       width: 40%;
       padding: 0 30px; }
-      .ordinaQui .infoContainer > div:first-child {
-        text-align: right; }
       @media (min-width: 1200px) {
         .ordinaQui .infoContainer > div {
-          width: 100%;
-          padding: 0; }
-          .ordinaQui .infoContainer > div:first-child {
-            text-align: left; } }
+          width: 70%;
+          padding: 0;
+          text-align: left; } }
     .ordinaQui .infoContainer h4 {
       font-weight: bold;
       text-transform: uppercase;
@@ -390,3 +390,5 @@ body {
   margin: 0; }
   body img {
     object-fit: cover; }
+  body main {
+    margin-top: 80px; }
