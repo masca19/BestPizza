@@ -1,0 +1,40 @@
+@import '../variable', '../mixin';
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: $lightGrey;
+
+    @include mobile-tablet {
+        flex-direction: column;
+    }
+
+    h2 {
+        @include titleSection();
+        font-size: 2.2rem;
+        font-weight: normal;
+        width: 50%;
+
+        @include mobile-tablet {
+            width: auto;
+        }
+    }
+    .socialsContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+    }
+
+    .facebook {
+        width: 100px;
+        padding-right: 80px;
+    }
+
+    .tripadvisor {
+        width: 130px;
+        margin-top: 25px;
+    }
+}

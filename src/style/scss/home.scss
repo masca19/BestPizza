@@ -1,0 +1,17 @@
+@import 'font', 'variable', 'reset';
+@import './component/header.scss';
+@import './component/sectionFullScreen.scss';
+@import './component/ourSecret.scss';
+@import './component/social.scss';
+@import './component/ordinaQui.scss';
+@import './component/footer.scss';
+
+body { 
+    font-family: Adequate;
+    font-size: 16px;
+    margin: 0;
+
+    img {
+        object-fit: cover;
+    }
+}

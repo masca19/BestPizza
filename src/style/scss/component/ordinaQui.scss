@@ -1,0 +1,89 @@
+@import '../variable', '../mixin', '../font';
+
+
+.ordinaQui {
+    margin: 0 auto;
+    padding: 50px 0;
+    color: $bordeaux;
+    background-color: $white;
+
+    h2 {
+        @include titleSection();
+    }
+
+    .allInfoWrapper{
+        display: flex;
+        max-width: 1200px;
+        margin: 0 auto;
+        flex-direction: column;
+
+        @include full {
+            flex-direction: row;
+        }
+    }
+
+    .infoContainer {
+        display: flex;
+        justify-content: center;
+
+        @include full {
+            display: block;
+            width: 50%;
+            padding-right: 40px;
+        }
+        
+        @include mobile-tablet {
+            display: block;
+            text-align: center;
+        }
+
+        &>div {
+            margin-bottom: 20px;
+            width: 40%;
+            padding: 0 30px;
+
+            &:first-child {
+                text-align: right;
+            }
+
+            @include full {
+                width: 100%;
+                padding: 0;
+
+                &:first-child {
+                    text-align: left;
+                }
+            }
+        }
+
+        h4 {
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 7px;
+        }
+
+        span:first-child:after {
+            content: ": "
+        }
+        
+    }
+
+    .hourContainer p{
+        margin-bottom: 10px;
+    }
+
+    .mapContainer {
+        @include full {
+            width:50%;
+
+        }
+        iframe {
+            width: 100%;
+        }
+    }
+
+    address {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+}

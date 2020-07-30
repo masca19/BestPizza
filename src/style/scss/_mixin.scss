@@ -1,0 +1,13 @@
+@import 'variable', 'font', 'breakpoint';
+
+@mixin titleSection {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 50px 30px;
+    color: $bordeaux;
+
+    @include mobile {
+        font-size: 2.2rem;
+    }
+}

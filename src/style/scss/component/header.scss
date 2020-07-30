@@ -1,0 +1,53 @@
+@import '../variable';
+@import '../breakpoint';
+
+header {
+	position: absolute;
+	top: -40px;
+	width: 100%;
+	margin-bottom: 40px;
+	font-size: 1.5rem;
+}
+
+.headerWrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 90%;
+	margin: 0 auto;
+	padding: 0 30px;
+	color: $white;
+
+	.imglogo {
+		display: flex;
+		align-items: center;
+
+		img {
+			width: 300px;
+		}
+	}
+
+	ul {
+		display: flex;
+	}
+
+	li {
+		list-style-type: none;
+		text-shadow: 0px 0px 8px rgba(0, 0, 0, 1);
+
+		&:not(:last-child) {
+			padding-right: 40px;
+		}
+
+		&:hover {
+			cursor: pointer;
+			text-decoration: underline;
+		}
+	}
+}
+
+@include mobile-tablet {
+	.headerWrapper {
+		flex-direction: column;
+	}
+}

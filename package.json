@@ -1,0 +1,19 @@
+{
+  "name": "pizzeria-best",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/js/main.js",
+  "scripts": {
+    "sass": "node-sass src/style/scss -o src/style/css",
+    "sass:watch": "npm run sass -- --watch",
+    "sass:build": "npm run sass -- --output-style compressed"
+  },
+  "node-sass": "^4.13.1",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "csv-parser": "^2.3.3",
+    "node-fetch": "^2.6.0",
+    "node-sass": "^4.14.1"
+  }
+}

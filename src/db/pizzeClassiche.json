@@ -1,0 +1,382 @@
+[
+  {
+    "Nome": "Rossa",
+    "Ingredienti": "Doppio Pomodoro San Marzano",
+    "Prezzo": "3,00"
+  },
+  {
+    "Nome": "Marinara",
+    "Ingredienti": "Doppio Pomodoro San Marzano, Aglio, Origano",
+    "Prezzo": "4,00"
+  },
+  {
+    "Nome": "Bianca",
+    "Ingredienti": "Mozzarella Fior di Latte",
+    "Prezzo": "5,00"
+  },
+  {
+    "Nome": "Margherita",
+    "Ingredienti": "Pomodoro San Marzano, Mozzarella Fior di latte",
+    "Prezzo": "4,00"
+  },
+  {
+    "Nome": "Napoli",
+    "Ingredienti": "Pomodoro San Marzano , Mozzarells Fior di latte, Acciughe, Origano",
+    "Prezzo": "5,00"
+  },
+  {
+    "Nome": "Salsiccia",
+    "Ingredienti": "Pomodoro San marzano, Mozzarella Fior di Latte, Salsiccia",
+    "Prezzo": "5,00"
+  },
+  {
+    "Nome": "Carciofi",
+    "Ingredienti": "Pomodoro San Marzano, Mozzarella Fior di Latte, Carciofi",
+    "Prezzo": "5,00"
+  },
+  {
+    "Nome": "Olive",
+    "Ingredienti": "Pomodoro San Marzano, Mozzarella Fior di Latte, Olive Nere Denocciolate",
+    "Prezzo": "5,00"
+  },
+  {
+    "Nome": "Funghi",
+    "Ingredienti": "Pomodoro San Marzano, Mozzarella Fior di Latte, Funghi Freschi",
+    "Prezzo": "5,00"
+  },
+  {
+    "Nome": "Cipolla",
+    "Ingredienti": "Pomodoro San Marzano, Mozzarella Fior di Latte, Cipolla di Tropea",
+    "Prezzo": "5,00"
+  },
+  {
+    "Nome": "Prosciutto",
+    "Ingredienti": "Pomodoro San Marzano, Mozzarella Fior di Latte, Prosciutto Cotto-Crudo",
+    "Prezzo": "5,00"
+  },
+  {
+    "Nome": "Wurstel",
+    "Ingredienti": "Pomodoro San Marzano, Mozzarella Fior di Latte, Wurstel",
+    "Prezzo": "5,00"
+  },
+  {
+    "Nome": "Salsiccia e Funghi",
+    "Ingredienti": "Pomodoro San Marzano, Mozzarella Fior di Latte, Salsiccia, Funghi",
+    "Prezzo": "6,00"
+  },
+  {
+    "Nome": "Sasccia e Cipolla",
+    "Ingredienti": "Pomodoro San Marzano, Mozzarella Fior di Latte, Salsiccia, Cipolla",
+    "Prezzo": "6,00"
+  },
+  {
+    "Nome": "Prosciutto e Funghi",
+    "Ingredienti": "Pomodoro San Marzano, Mozzarella Fior di Latte, Prosciutto Cotto, Funghi Freschi",
+    "Prezzo": "6,00"
+  },
+  {
+    "Nome": "Tonno",
+    "Ingredienti": "Pomodoro San Marzano, Mozzarella Fior di Latte , Tonno",
+    "Prezzo": "6,00"
+  },
+  {
+    "Nome": "Romana",
+    "Ingredienti": "Pomodoro San Marzano, Mozzarella Fior di Latte, Acciughe, Capperi, Organo",
+    "Prezzo": "6,00"
+  },
+  {
+    "Nome": "Pugliese",
+    "Ingredienti": "Doppio Pomodoro San Marzano, Mozzarella Fior di Latte, Cipolla di Tropea, Grana",
+    "Prezzo": "5,00"
+  },
+  {
+    "Nome": "Povera",
+    "Ingredienti": "Pomodorino Ciliegino, Aglio e Origano",
+    "Prezzo": "5,00"
+  },
+  {
+    "Nome": "Patatì",
+    "Ingredienti": "Pomodoro San Marzano, Mozzarella Fior di Latte, Patatine*",
+    "Prezzo": "5,00"
+  },
+  {
+    "Nome": "Siciliana",
+    "Ingredienti": "Pomodoro San Marzano, Mozzarella fior di Latte, Acciughe, Capperi, Organo, Olive",
+    "Prezzo": "6,00"
+  },
+  {
+    "Nome": "Diavola",
+    "Ingredienti": "Pomodoro San Marzano, Mozzarella Fior di Latte, Salame Piccante Lucano",
+    "Prezzo": "6,00"
+  },
+  {
+    "Nome": "Capricciosa",
+    "Ingredienti": "Pomodoro San Marzano, Mozzarella Fior di Latte, Prosciutto Cotto, Carciofi, Funghi Freschi e Olive Nere Denocciolate",
+    "Prezzo": "6,00"
+  },
+  {
+    "Nome": "4 Stagioni",
+    "Ingredienti": "Pomodoro San Marzano, Mozzarella Fior di Latte, Prosciutto Cotto, Carciofi, Funghi Freschi e Salsccia",
+    "Prezzo": "6,00"
+  },
+  {
+    "Nome": "4 Formaggi",
+    "Ingredienti": "Pomodoro San Marzano, Mozzarella Fior di Latte, Formaggi Misti",
+    "Prezzo": "6,00"
+  },
+  {
+    "Nome": "4 Salumi",
+    "Ingredienti": "Pomodoro San Marzano, Mozzarella Fior di Latte, Wurstel, Salsiccia, Prosciutto Cotto, Salame Piccante Lucano",
+    "Prezzo": "7,00"
+  },
+  {
+    "Nome": "Carmen",
+    "Ingredienti": "Mozzarella Fior di Latte, Carciofi, Salmone Affumicato e un pò di Pepe Nero",
+    "Prezzo": "8,00"
+  },
+  {
+    "Nome": "Pizza Kebab",
+    "Ingredienti": "Pomodoro San Marzano, Mozzarella Fior di Latte, Pomodorini Ciliegino, Cipolla di Tropea, Kebab",
+    "Prezzo": "9,00"
+  },
+  {
+    "Nome": "Gorgonzola",
+    "Ingredienti": "Pomodoro San Marzano, Mozzarella Fior di Latte, Gorgonzola",
+    "Prezzo": "6,00"
+  },
+  {
+    "Nome": "Patate",
+    "Ingredienti": "Pomodoro San Marzano, Mozzarella Fior di Latte, Patate al Forno",
+    "Prezzo": "6,00"
+  },
+  {
+    "Nome": "Melanzane",
+    "Ingredienti": "Pomodoro San Marzano, Mozzarella Fior di Latte, Melanzane al Forno",
+    "Prezzo": "6,00"
+  },
+  {
+    "Nome": "Zucchine",
+    "Ingredienti": "Pomodoro San Marzano, Mozzarella Fior di Latte, Zucchine al Forno",
+    "Prezzo": "6,00"
+  },
+  {
+    "Nome": "Peperoni",
+    "Ingredienti": "Pomodoro San Marzano, Mozzarella Fior di Latte, Peperoni al Forno",
+    "Prezzo": "6,00"
+  },
+  {
+    "Nome": "Belga",
+    "Ingredienti": "Pomodoro San Marzano, Mozzarella Fior di Latte e Belga al Forno",
+    "Prezzo": "6,00"
+  },
+  {
+    "Nome": "Stracchino",
+    "Ingredienti": "Doppio Pomodoro San Marzano, Stracchino",
+    "Prezzo": "6,00"
+  },
+  {
+    "Nome": "Rucola",
+    "Ingredienti": "Pomodoro San Marzano, Mozzarella Fior di Latte, Rucola in Uscita",
+    "Prezzo": "6,00"
+  },
+  {
+    "Nome": "Spinaci",
+    "Ingredienti": "Pomodoro San Marzano, Mozzarella Fior di Latte, Spinaci*",
+    "Prezzo": "6,00"
+  },
+  {
+    "Nome": "Positano",
+    "Ingredienti": "Mozzarella Fior di Latte, friarielli (Cime di Rapa) Salsiccia, Grana",
+    "Prezzo": "6,00"
+  },
+  {
+    "Nome": "Bufala",
+    "Ingredienti": "Pomodoro San Marzano, Mozzarella di Bufala DOP Campana",
+    "Prezzo": "7,00"
+  },
+  {
+    "Nome": "Krucca",
+    "Ingredienti": "Pomodoro San Marzano, Mozzarella Fior di Latte, Patate e Wurstel",
+    "Prezzo": "7,00"
+  },
+  {
+    "Nome": "Tirolese",
+    "Ingredienti": "Pomodoro San Marzano, Mozzarella Fior di Latte, Speck e Rucola inUscita",
+    "Prezzo": "7,00"
+  },
+  {
+    "Nome": "Saracena",
+    "Ingredienti": "Pomodorini  Ciliegino, Mozzarella Fior di Latte, Origano",
+    "Prezzo": "7,00"
+  },
+  {
+    "Nome": "Porcini",
+    "Ingredienti": "Pomodoro San Marzano, Mozzarella Fior di Latte, Funghi e Porcini",
+    "Prezzo": "7,00"
+  },
+  {
+    "Nome": "Tricolore",
+    "Ingredienti": "Mozzarella Fior di Latte, Peperoni, Rucoloa in uscita",
+    "Prezzo": "7,00"
+  },
+  {
+    "Nome": "Texana",
+    "Ingredienti": "Pomodoro San Marzano, Mozzarella Fior di Latte, Fagioli, Cipolla di Tropea",
+    "Prezzo": "7,00"
+  },
+  {
+    "Nome": "Fede",
+    "Ingredienti": "Doppio Pomodoro San Marzano, Aglio, Origano, Peperoni e Patate  al Forno",
+    "Prezzo": "7,00"
+  },
+  {
+    "Nome": "Bosciola",
+    "Ingredienti": "Pomodoro San Marzano, Mozzarella Fior di Latte, Funghi Freschi, Funghi Porcini e Rucola in Uscita",
+    "Prezzo": "7,00"
+  },
+  {
+    "Nome": "Contadina",
+    "Ingredienti": "Pomodoro San Marzano, Mozzarella Fior di Latte, Salame Piccante Lucano, Olive e Peperoni al Forno",
+    "Prezzo": "7,00"
+  },
+  {
+    "Nome": "Delicata",
+    "Ingredienti": "Pomodoro San Marzano, Mozzarella Fior di Latte, Bresaola, Rucola e Grana a Scaglia in Uscita",
+    "Prezzo": "7,00"
+  },
+  {
+    "Nome": "Italiana",
+    "Ingredienti": "Pomodoro San Marzano, Mozzarella Fior di Latte, Prosciutto Crudo, Rucola e Grana a Scaglie in Uscita",
+    "Prezzo": "7,00"
+  },
+  {
+    "Nome": "Radicchio e Pancetta",
+    "Ingredienti": "Pomodoro San Marzano, Mozzarella Fior di Latte, Radicchio, Pancetta Arrotolata",
+    "Prezzo": "7,00"
+  },
+  {
+    "Nome": "Rustica",
+    "Ingredienti": "Pomodoro San Marzano, Mozzarella Fior di Latte, Spinaci, Salsiccia, Grana",
+    "Prezzo": "7,00"
+  },
+  {
+    "Nome": "Tosta",
+    "Ingredienti": "Pomodoro San Marzano, Mozzarella Fior di Latte, Salame Piccante Lucano, Gorgonzola",
+    "Prezzo": "7,00"
+  },
+  {
+    "Nome": "Pizzica",
+    "Ingredienti": "Pomodoro San Marzano, Mozzarella Fior di Latte, Auricchio, Funghi Trifolati, Bresaola e rucola in Uscita",
+    "Prezzo": "7,00"
+  },
+  {
+    "Nome": "Amatriciana",
+    "Ingredienti": "Pomodoro San Marzano, Mozzarella Fior di Latte, Pancetta Arrotolata e Cipolla di Tropea",
+    "Prezzo": "8,00"
+  },
+  {
+    "Nome": "Atomica",
+    "Ingredienti": "Pomodoro San Marzano, Mozzarella Fior di Latte, Asparagi, Uova, Grana",
+    "Prezzo": "8,00"
+  },
+  {
+    "Nome": "Beppe",
+    "Ingredienti": "Pomodoro San Marzano, Mozzarella Fior di Latte, Pancetta Arrotolata , Prosciutto Cotto, Wurstel, Funghi Freschi,Salsiccia e Olive Nere Denocciolate",
+    "Prezzo": "8,00"
+  },
+  {
+    "Nome": "Brie e Noci",
+    "Ingredienti": "Mozzarella Fior di Latte, Brie e Noci",
+    "Prezzo": "8,00"
+  },
+  {
+    "Nome": "Bufalina",
+    "Ingredienti": "Pomodorini Ciliegino, Mozzarella di Bufala DOP",
+    "Prezzo": "8,00"
+  },
+  {
+    "Nome": "Estiva",
+    "Ingredienti": "Pomodorino Ciliegino, Mozzarella Fior di Latte, Tono, Capperi",
+    "Prezzo": "8,00"
+  },
+  {
+    "Nome": "Frutti di Mare",
+    "Ingredienti": "Doppio Pomodoro San Marzano, Frutti di Mare*, Aglio",
+    "Prezzo": "8,00"
+  },
+  {
+    "Nome": "Gamberetti e Rucola",
+    "Ingredienti": "Doppio Pomodoro San Marzano, Gamberetti*, Aglio e Rucola in Uscita",
+    "Prezzo": "8,00"
+  },
+  {
+    "Nome": "Gorgonzola e Mele",
+    "Ingredienti": "Mozzarella Fior di Latte, Gorgonzola e Mele",
+    "Prezzo": "8,00"
+  },
+  {
+    "Nome": "Gorgonzola e Noci",
+    "Ingredienti": "Mozzarella Fior di Latte, Gorgonzola e Noci",
+    "Prezzo": "8,00"
+  },
+  {
+    "Nome": "Messicana",
+    "Ingredienti": "Pomodoro San Marzano, Mozzarella Fior di Latte, Fagioli, Cipolla di Tropea, Pancetta Arrotolata e Peperoncino",
+    "Prezzo": "8,00"
+  },
+  {
+    "Nome": "Molitero",
+    "Ingredienti": "Doppio Pomodoro San Marzano, Ricotta, Spinaci, Salame Piccante Lucano",
+    "Prezzo": "8,00"
+  },
+  {
+    "Nome": "Nordica",
+    "Ingredienti": "Doppio Pomodoro San Marzano, Speck e Brie",
+    "Prezzo": "8,00"
+  },
+  {
+    "Nome": "Normanna",
+    "Ingredienti": "Doppio Pomodoro San Marzano, Scamorza Affumicata, Pancetta Arrotolata, Peperoni al Forno",
+    "Prezzo": "8,00"
+  },
+  {
+    "Nome": "Parmigiana",
+    "Ingredienti": "Pomodoro San Marzano, Mozzarella Fior di Latte, Melanzane al Forno, Prosciutto Cotto, Grana",
+    "Prezzo": "8,00"
+  },
+  {
+    "Nome": "Sarda",
+    "Ingredienti": "Pomodoro San Marzano, Mozzarella Fior di Latte, Salsiccia, Pecorino",
+    "Prezzo": "8,00"
+  },
+  {
+    "Nome": "Scandinava",
+    "Ingredienti": "Mozzarella Fior di Latte, Panna, Salmone Affumicato e Rucola in Uscita",
+    "Prezzo": "8,00"
+  },
+  {
+    "Nome": "Vegetariana",
+    "Ingredienti": "Pomodoro San Marzano, Mozzarella Fior di Latte, Radicchio, Patate, Melanzane, Zucchine, Peperoni e Belga al Forno",
+    "Prezzo": "8,00"
+  },
+  {
+    "Nome": "Mediterranea",
+    "Ingredienti": "Pomodorino Ciliegino, Mozzarella di Bufala DOPe Rucola in Uscita",
+    "Prezzo": "8,,00"
+  },
+  {
+    "Nome": "Delizia",
+    "Ingredienti": "Pomodoro San Marzano, Mozzarella di Bufala DOP, Wurstel, Patate al Forno",
+    "Prezzo": "8,,00"
+  },
+  {
+    "Nome": "Latina",
+    "Ingredienti": "Mozzarella di Bufala DOP, Funghi Trifolati, Salsiccia, Patate al Forno",
+    "Prezzo": "8,,00"
+  },
+  {
+    "Nome": "Lucana",
+    "Ingredienti": "Pomodoro San Marzano, Mozzarella Fior di Latte,Salame Piccante Lucano, Funghi Freschi, Fughi Porcini, Grana, Pomodorini",
+    "Prezzo": "8,,00"
+  }
+]

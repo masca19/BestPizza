@@ -1,0 +1,82 @@
+@font-face {
+  font-family: 'Adequate';
+  font-weight: normal;
+  src: url("../font/Adequate-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Adequate';
+  font-weight: bold;
+  src: url("../font/Adequate-Bold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Adequate';
+  font-weight: normal;
+  src: url("../font/Adequate-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Adequate';
+  font-weight: bold;
+  src: url("../font/Adequate-Bold.ttf") format("truetype"); }
+
+.ordinaQui {
+  margin: 0 auto;
+  padding: 50px 0;
+  color: #830303;
+  background-color: white; }
+  .ordinaQui h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 50px 30px;
+    color: #830303; }
+    @media (max-width: calc(768px - 1px)) {
+      .ordinaQui h2 {
+        font-size: 2.2rem; } }
+  .ordinaQui .allInfoWrapper {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-direction: column; }
+    @media (min-width: 1200px) {
+      .ordinaQui .allInfoWrapper {
+        flex-direction: row; } }
+  .ordinaQui .infoContainer {
+    display: flex;
+    justify-content: center; }
+    @media (min-width: 1200px) {
+      .ordinaQui .infoContainer {
+        display: block;
+        width: 50%;
+        padding-right: 40px; } }
+    @media (max-width: calc(1024px - 1px)) {
+      .ordinaQui .infoContainer {
+        display: block;
+        text-align: center; } }
+    .ordinaQui .infoContainer > div {
+      margin-bottom: 20px;
+      width: 40%;
+      padding: 0 30px; }
+      .ordinaQui .infoContainer > div:first-child {
+        text-align: right; }
+      @media (min-width: 1200px) {
+        .ordinaQui .infoContainer > div {
+          width: 100%;
+          padding: 0; }
+          .ordinaQui .infoContainer > div:first-child {
+            text-align: left; } }
+    .ordinaQui .infoContainer h4 {
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 7px; }
+    .ordinaQui .infoContainer span:first-child:after {
+      content: ": "; }
+  .ordinaQui .hourContainer p {
+    margin-bottom: 10px; }
+  @media (min-width: 1200px) {
+    .ordinaQui .mapContainer {
+      width: 50%; } }
+  .ordinaQui .mapContainer iframe {
+    width: 100%; }
+  .ordinaQui address {
+    text-align: center;
+    margin-bottom: 15px; }
