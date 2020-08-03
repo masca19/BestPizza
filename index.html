@@ -7,6 +7,7 @@
 	<title>Best Pizza</title>
 	<meta name="Description" content="Da 13 anni Best Pizza sforna pizze per tutta Bologna. Da Via Giacomo Puccini troverete la vera pizza italiana">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="./src/media/svg/logo.svg" type="image/svg" />
 	<link rel="stylesheet" type="text/css" media="screen" href="src/style/css/home.css" />
 </head>
 
@@ -31,7 +32,7 @@
 			<img src="src/media/img/pizzeria.jpeg" alt="pizza infornata in un forno a legna" class="fullImage">
 			<h2 hidden>Pizzeria Beppe</h2>
 			<h3>La pizza migliore di Bologna direttamente a casa tua</h3>
-			<button class="">Ordina ora</button>
+			<button id="orderNowBtn">Ordina ora</button>
 		</section>
 		<section class="ourSecret">
 			<h2>I nostri segreti</h2>
@@ -59,11 +60,15 @@
 		<section class="social">
 			<h2>Cosa dicono di noi</h2>
 			<div class="socialsContainer">
-				<img class="facebook" src="src/media/svg/facebook.svg" alt="">
-				<img class="tripadvisor" src="src/media/svg/tripadvisor.svg" alt="">
+				<a href="https://www.facebook.com/pizzeriabeppe">
+					<img class="facebook" src="src/media/svg/facebook.svg" alt="">
+				</a>
+				<a href="https://www.tripadvisor.it/Restaurant_Review-g187801-d6200524-Reviews-Best_Pizza-Bologna_Province_of_Bologna_Emilia_Romagna.html">
+					<img class="tripadvisor" src="src/media/svg/tripadvisor.svg" alt="">
+				</a>
 			</div>
 		</section>
-		<section class="ordinaQui">
+		<section id='ordinaQui' class="ordinaQui">
 			<h2>Dove trovarci</h2>
 			<div class="allInfoWrapper">
 				<div class="infoContainer">
@@ -97,4 +102,15 @@
 	</footer>
 </body>
 
+<script>
+	const orderNowBtn = document.getElementById('orderNowBtn');
+	const orderNowSection = document.getElementById('ordinaQui');
+	const positionToScroll = orderNowSection.offsetTop
+	orderNowBtn.addEventListener('click', () => {
+		window.scrollTo({
+			top: positionToScroll,
+			behavior: 'smooth'
+		});
+	})
+</script>
 </html>

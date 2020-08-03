@@ -392,3 +392,5 @@ body {
     object-fit: cover; }
   body main {
     margin-top: 80px; }
+  body button {
+    outline: transparent; }
