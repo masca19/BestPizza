@@ -6,7 +6,8 @@
   "scripts": {
     "sass": "node-sass src/style/scss -o src/style/css",
     "sass:watch": "npm run sass -- --watch",
-    "sass:build": "npm run sass -- --output-style compressed"
+    "sass:build": "npm run sass -- --output-style compressed",
+    "updateMenu": "node ./src/js/preprocessHtml/menu.js; node ./src/js/preprocessHtml/mergeMenu.js"
   },
   "node-sass": "^4.13.1",
   "author": "",
