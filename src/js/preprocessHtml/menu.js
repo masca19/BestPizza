@@ -9,11 +9,14 @@ let stuzzicherie = '';
 let bibite = '';
 let primi_piatti = '';
 let dolci_gelati = '';
+function trString(row) {
+    return `<tr><td class="name">${row.Nome}</td><td class="ingredienti">${row.Ingredienti}</td><td class="price">${row.Prezzo}</td></tr>`
+}
 
 fs.createReadStream(path.join(__dirname, '../../db/pizzeClassiche.csv'))
     .pipe(csv())
     .on('data', (row) => {
-        pizzeClassiche += `<tr><td>${row.Nome}</td><td>${row.Ingredienti}</td><td>${row.Prezzo}</td></tr>`
+        pizzeClassiche += trString(row);
     })
     .on('end', () => {
         fs.writeFile(path.join(__dirname, '../../db/menuHtml/01_pizze_classiche.html'), pizzeClassiche, function (err) {
@@ -25,7 +28,7 @@ fs.createReadStream(path.join(__dirname, '../../db/pizzeClassiche.csv'))
 fs.createReadStream(path.join(__dirname, '../../db/pizze_giganti.csv'))
     .pipe(csv())
     .on('data', (row) => {
-        pizze_giganti += `<tr><td>${row.Nome}</td><td>${row.Ingredienti}</td><td>${row.Prezzo}</td></tr>`
+        pizze_giganti += trString(row);
     })
     .on('end', () => {
         fs.writeFile(path.join(__dirname, '../../db/menuHtml/02_pizze_giganti.html'), pizze_giganti, function (err) {
@@ -37,7 +40,7 @@ fs.createReadStream(path.join(__dirname, '../../db/pizze_giganti.csv'))
 fs.createReadStream(path.join(__dirname, '../../db/supplementi.csv'))
     .pipe(csv())
     .on('data', (row) => {
-        supplementi += `<tr><td>${row.Nome}</td><td>${row.Prezzo}</td></tr>`
+        supplementi += `<tr><td class="nameSup">${row.Nome}</td><td class="priceSup">${row.Prezzo}</td></tr>`
     })
     .on('end', () => {
         fs.writeFile(path.join(__dirname, '../../db/menuHtml/04_supplementi.html'), supplementi, function (err) {
@@ -49,7 +52,7 @@ fs.createReadStream(path.join(__dirname, '../../db/supplementi.csv'))
 fs.createReadStream(path.join(__dirname, '../../db/gnocco_calzoni.csv'))
     .pipe(csv())
     .on('data', (row) => {
-        gnocco_calzoni += `<tr><td>${row.Nome}</td><td>${row.Ingredienti}</td><td>${row.Prezzo}</td></tr>`
+        gnocco_calzoni +=trString(row);
     })
     .on('end', () => {
         fs.writeFile(path.join(__dirname, '../../db/menuHtml/03_gnocco_calzoni.html'), gnocco_calzoni, function (err) {
@@ -61,7 +64,7 @@ fs.createReadStream(path.join(__dirname, '../../db/gnocco_calzoni.csv'))
 fs.createReadStream(path.join(__dirname, '../../db/stuzzicherie.csv'))
     .pipe(csv())
     .on('data', (row) => {
-        stuzzicherie += `<tr><td>${row.Nome}</td><td>${row.Ingredienti}</td><td>${row.Prezzo}</td></tr>`
+        stuzzicherie +=trString(row);
     })
     .on('end', () => {
         fs.writeFile(path.join(__dirname, '../../db/menuHtml/06_stuzzicherie.html'), stuzzicherie, function (err) {
@@ -73,7 +76,7 @@ fs.createReadStream(path.join(__dirname, '../../db/stuzzicherie.csv'))
 fs.createReadStream(path.join(__dirname, '../../db/bibite.csv'))
     .pipe(csv())
     .on('data', (row) => {
-        bibite += `<tr><td>${row.Nome}</td><td>${row.Ingredienti}</td><td>${row.Prezzo}</td></tr>`
+        bibite += trString(row);
     })
     .on('end', () => {
         fs.writeFile(path.join(__dirname, '../../db/menuHtml/08_bibite.html'), bibite, function (err) {
@@ -85,7 +88,7 @@ fs.createReadStream(path.join(__dirname, '../../db/bibite.csv'))
 fs.createReadStream(path.join(__dirname, '../../db/primi_piatti.csv'))
     .pipe(csv())
     .on('data', (row) => {
-        primi_piatti += `<tr><td>${row.Nome}</td><td>${row.Ingredienti}</td><td>${row.Prezzo}</td></tr>`
+        primi_piatti += trString(row);
     })
     .on('end', () => {
         fs.writeFile(path.join(__dirname, '../../db/menuHtml/05_primi_piatti.html'), primi_piatti, function (err) {
@@ -97,7 +100,7 @@ fs.createReadStream(path.join(__dirname, '../../db/primi_piatti.csv'))
 fs.createReadStream(path.join(__dirname, '../../db/dolci_gelati.csv'))
     .pipe(csv())
     .on('data', (row) => {
-        dolci_gelati += `<tr><td>${row.Nome}</td><td>${row.Ingredienti}</td><td>${row.Prezzo}</td></tr>`
+        dolci_gelati += trString(row);
     })
     .on('end', () => {
         fs.writeFile(path.join(__dirname, '../../db/menuHtml/07_dolci_gelati.html'), dolci_gelati, function (err) {

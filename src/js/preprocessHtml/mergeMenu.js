@@ -43,7 +43,7 @@ listOfMenu.forEach((el, i) => mergeMenu(el.pathMenu, el.title, i))
 function mergeMenu(pathMenu, title, i) {
     fs.createReadStream(path.join(__dirname, pathMenu))
         .on('data', (file) => {
-            menu += `<h2>${title}</h2><table>${file.toString()}</table>`;
+            menu += `<h2>${title}</h2><table><tbody>${file.toString()}</tbody></table>`;
             console.log('Merged', title)
             if (i === listOfMenu.length -1) {
                 fs.writeFile(path.join(__dirname, '../../../tableMenu.html'), menu, function (err) {
