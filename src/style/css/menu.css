@@ -1,0 +1,251 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'Adequate';
+  font-weight: normal;
+  src: url("../font/Adequate-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Adequate';
+  font-weight: bold;
+  src: url("../font/Adequate-Bold.ttf") format("truetype"); }
+
+html {
+  color: #000;
+  background: #FFF; }
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+fieldset,
+img {
+  border: 0; }
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var,
+optgroup {
+  font-style: inherit;
+  font-weight: inherit; }
+
+del,
+ins {
+  text-decoration: none; }
+
+li {
+  list-style: none; }
+
+caption,
+th {
+  text-align: left; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal; }
+
+q:before,
+q:after {
+  content: ''; }
+
+abbr,
+acronym {
+  border: 0;
+  font-variant: normal; }
+
+sup {
+  vertical-align: baseline; }
+
+sub {
+  vertical-align: baseline; }
+
+/*because legend doesn't inherit in IE */
+legend {
+  color: #000; }
+
+input,
+button,
+textarea,
+select,
+optgroup,
+option {
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit; }
+
+/*@purpose To enable resizing for IE */
+/*@branch For IE6-Win, IE7-Win */
+input,
+button,
+textarea,
+select {
+  *font-size: 100%; }
+
+@font-face {
+  font-family: 'Adequate';
+  font-weight: normal;
+  src: url("../font/Adequate-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Adequate';
+  font-weight: bold;
+  src: url("../font/Adequate-Bold.ttf") format("truetype"); }
+
+header {
+  font-size: 1.5rem; }
+  @media (max-width: calc(768px - 1px)) {
+    header {
+      width: 100%; } }
+
+a {
+  text-decoration: none;
+  color: white; }
+  a:visited {
+    color: white; }
+
+.headerWrapper {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 30px;
+  color: white; }
+  .headerWrapper .imglogo {
+    display: flex;
+    align-items: center; }
+    @media (max-width: calc(768px - 1px)) {
+      .headerWrapper .imglogo {
+        margin-top: -15px; } }
+    .headerWrapper .imglogo img {
+      width: 300px;
+      object-fit: initial; }
+      @media (max-width: calc(768px - 1px)) {
+        .headerWrapper .imglogo img {
+          width: 225px; } }
+  .headerWrapper ul {
+    display: flex;
+    margin-left: 50px; }
+    @media (max-width: calc(1024px - 1px)) {
+      .headerWrapper ul {
+        margin-left: 0;
+        justify-content: center;
+        padding-bottom: 50px; } }
+  .headerWrapper li {
+    list-style-type: none;
+    text-shadow: 0px 0px 8px black; }
+    .headerWrapper li:not(:last-child) {
+      padding-right: 40px; }
+    .headerWrapper li:hover {
+      cursor: pointer;
+      text-decoration: underline; }
+
+@media (max-width: calc(1024px - 1px)) {
+  .headerWrapper {
+    flex-direction: column; } }
+
+table,
+h2 {
+  width: 80%;
+  max-width: 1024px;
+  margin: 0 auto; }
+
+tr {
+  display: grid;
+  grid-template-columns: auto min-content;
+  grid-template-rows: auto auto;
+  grid-template-areas: "nome nome" "ingredienti price";
+  padding: 10px 0; }
+
+.name {
+  grid-area: nome;
+  width: 200px;
+  font-weight: bold; }
+
+.nameSup {
+  width: auto; }
+
+.ingredienti {
+  grid-area: ingredienti; }
+
+.price {
+  grid-area: price;
+  align-self: end;
+  padding-left: 7px; }
+
+.price,
+.priceSup {
+  text-align: right; }
+  .price::after,
+  .priceSup::after {
+    content: '€';
+    padding-left: 3px; }
+
+footer {
+  background-color: #830303;
+  padding: 50px 0;
+  text-align: center;
+  color: white; }
+
+body {
+  font-family: Adequate;
+  font-size: 16px;
+  margin: 0; }
+
+header {
+  background-color: #830303; }
+
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 50px 30px;
+  color: #830303;
+  text-align: center; }
+  @media (max-width: calc(768px - 1px)) {
+    h1 {
+      font-size: 2.2rem; } }
+
+h2 {
+  font-size: 1.8rem;
+  color: #830303;
+  padding-bottom: 15px;
+  padding-top: 50px; }

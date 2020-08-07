@@ -1,0 +1,48 @@
+table,
+h2 {
+    width: 80%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+tr {
+    display: grid;
+    grid-template-columns: auto min-content;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+        "nome nome"
+        "ingredienti price";
+    padding: 10px 0;
+}
+
+.name {
+    grid-area: nome;
+    width: 200px;
+    font-weight: bold;
+}
+
+.nameSup {
+    width: auto;
+}
+
+.ingredienti {
+    grid-area: ingredienti;
+}
+
+.price {
+    grid-area: price;
+    align-self: end;
+    padding-left: 7px;
+}
+
+
+
+.price,
+.priceSup {
+    text-align: right;
+
+    &::after {
+        content: '€';
+        padding-left: 3px;
+    }
+}

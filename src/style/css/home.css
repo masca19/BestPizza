@@ -121,15 +121,19 @@ select {
   *font-size: 100%; }
 
 header {
-  position: absolute;
-  width: 100%;
-  top: -20px;
-  margin-bottom: 40px;
   font-size: 1.5rem; }
+  @media (max-width: calc(768px - 1px)) {
+    header {
+      width: 100%; } }
+
+a {
+  text-decoration: none;
+  color: white; }
+  a:visited {
+    color: white; }
 
 .headerWrapper {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   margin: 0 auto;
   padding: 0 30px;
@@ -137,14 +141,23 @@ header {
   .headerWrapper .imglogo {
     display: flex;
     align-items: center; }
+    @media (max-width: calc(768px - 1px)) {
+      .headerWrapper .imglogo {
+        margin-top: -15px; } }
     .headerWrapper .imglogo img {
-      width: 400px;
+      width: 300px;
       object-fit: initial; }
       @media (max-width: calc(768px - 1px)) {
         .headerWrapper .imglogo img {
           width: 225px; } }
   .headerWrapper ul {
-    display: flex; }
+    display: flex;
+    margin-left: 50px; }
+    @media (max-width: calc(1024px - 1px)) {
+      .headerWrapper ul {
+        margin-left: 0;
+        justify-content: center;
+        padding-bottom: 50px; } }
   .headerWrapper li {
     list-style-type: none;
     text-shadow: 0px 0px 8px black; }
@@ -164,7 +177,7 @@ header {
   align-items: center;
   flex-direction: column;
   width: 100%;
-  height: 100vh;
+  height: calc(100vh - 80px);
   color: white;
   font-size: 1.5rem; }
   .fullScreen h3 {
@@ -174,7 +187,9 @@ header {
     text-shadow: 0px 0px 8px black; }
     @media (max-width: calc(768px - 1px)) {
       .fullScreen h3 {
-        padding: 0 40px; } }
+        padding: 0 40px;
+        font-size: 1.3rem;
+        padding-top: 50px; } }
   .fullScreen img {
     position: fixed;
     top: 0;
@@ -388,6 +403,9 @@ body {
   font-family: Adequate;
   font-size: 16px;
   margin: 0; }
+  body header {
+    position: absolute;
+    top: 0; }
   body img {
     object-fit: cover; }
   body main {

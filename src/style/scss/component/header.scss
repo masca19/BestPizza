@@ -2,16 +2,22 @@
 @import '../breakpoint';
 
 header {
-	position: absolute;
-	width: 100%;
-	top: -20px;
-	margin-bottom: 40px;
 	font-size: 1.5rem;
+	@include mobile {
+		width: 100%;
+	}
+}
+
+a {
+	text-decoration: none;
+	color: $white;
+	&:visited {
+		color: $white;
+	}
 }
 
 .headerWrapper {
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
 	margin: 0 auto;
 	padding: 0 30px;
@@ -20,9 +26,12 @@ header {
 	.imglogo {
 		display: flex;
 		align-items: center;
+		@include mobile {
+			margin-top: -15px;
+		}
 
 		img {
-			width: 400px;
+			width: 300px;
 			object-fit: initial;
 			@include mobile {
 				width: 225px;
@@ -32,6 +41,12 @@ header {
 
 	ul {
 		display: flex;
+		margin-left: 50px;
+		@include mobile-tablet {
+			margin-left: 0;
+			justify-content: center;
+			padding-bottom: 50px;
+		}
 	}
 
 	li {

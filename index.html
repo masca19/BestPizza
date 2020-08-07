@@ -15,15 +15,16 @@
 	<h1 hidden>Best Pizza</h1>
 	<header>
 		<div class="headerWrapper">
-			<div class="imglogo">
+			<a class="imglogo" href="index.html">
 				<img src="./src/media/svg/logo.svg" alt="logo best pizza">
-			</div>
+			</a>
 			<nav>
-				<!-- <ul>
-					<li>Menù</li>
-					<li>Galleria</li>
-					<li>Dove trovarci</li>
-				</ul> -->
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="menu.html">Menù</a></li>
+					<!-- <li>Galleria</li> -->
+					<!-- <li id="where">Dove trovarci</li> -->
+				</ul>
 			</nav>
 		</div>
 	</header>
@@ -40,7 +41,7 @@
 				<article>
 					<img src="src/media/img/napoli.jpeg" alt="" srcset="">
 					<div class="titleContainer">
-						<h3>La tradizione e i sapori della vera pizza Napoletana</h3>
+						<h3>La tradizione e i gli ingredienti della vera pizza Napoletana</h3>
 					</div>
 				</article>
 				<article>
@@ -85,8 +86,8 @@
 					</div>
 					<div class="hourContainer">
 						<h4>Orari</h4>
-						<p>Lunedì dalle 18 alle 24</p>
-						<p>Dal martedì alla domencica orario continuato 12-24</p>
+						<p>Lunedì dalle 18 alle 22,30</p>
+						<p>Dal martedì alla domenica dalle 11 alle 14,30 e dalle 18 alle 22,30</p>
 					</div>
 				</div>
 				<div class="mapContainer">
@@ -104,13 +105,17 @@
 
 <script>
 	const orderNowBtn = document.getElementById('orderNowBtn');
+
 	const orderNowSection = document.getElementById('ordinaQui');
-	const positionToScroll = orderNowSection.offsetTop
-	orderNowBtn.addEventListener('click', () => {
+	orderNowBtn.addEventListener('click', scrollToOrderNow)
+
+
+	function scrollToOrderNow() {
+		const positionToScroll = orderNowSection.offsetTop
 		window.scrollTo({
 			top: positionToScroll,
 			behavior: 'smooth'
 		});
-	})
+	}
 </script>
 </html>
