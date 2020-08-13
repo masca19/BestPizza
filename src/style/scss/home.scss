@@ -22,6 +22,9 @@ body {
 
     main {
         margin-top: 80px;
+        @include mobile-tablet {
+            margin-top: 200px; 
+        }
     }
 
     button {

@@ -21,7 +21,7 @@ const listOfMenu = [
     },
     {
         pathMenu: '../../db/menuHtml/05_primi_piatti.html',
-        title: 'Primi piatti e Hamburger'
+        title: 'Primi piatti, secondi e Hamburger'
     },
     {
         pathMenu: '../../db/menuHtml/06_stuzzicherie.html',
@@ -29,7 +29,7 @@ const listOfMenu = [
     },
     {
         pathMenu: '../../db/menuHtml/07_dolci_gelati.html',
-        title: 'Stuzzicheria'
+        title: 'Dolci'
     },
     {
         pathMenu: '../../db/menuHtml/08_bibite.html',

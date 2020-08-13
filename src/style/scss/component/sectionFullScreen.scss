@@ -7,7 +7,7 @@
     align-items: center;
     flex-direction: column;
     width: 100%;
-    height: calc(100vh - 80px);
+    min-height: calc(100vh - 80px);
     color: white;
     font-size: 1.5rem;
 
@@ -18,8 +18,7 @@
         text-shadow: 0px 0px 8px rgba(0, 0, 0, 1);
         @include mobile {
             padding: 0 40px;
-            font-size: 1.3rem;
-            padding-top: 50px;
+            font-size: 1.2rem;
         }
     }
     
@@ -32,9 +31,16 @@
         z-index: -1;
         object-fit: cover;
     }
+
+    .btnContainer {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 30px 0;
+    }
     
     button {
-        margin: 50px;
+        margin: 30px;
         padding: 10px 20px;
         background-color: $bordeaux;
         color: white;

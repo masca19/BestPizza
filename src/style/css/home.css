@@ -177,7 +177,7 @@ a {
   align-items: center;
   flex-direction: column;
   width: 100%;
-  height: calc(100vh - 80px);
+  min-height: calc(100vh - 80px);
   color: white;
   font-size: 1.5rem; }
   .fullScreen h3 {
@@ -188,8 +188,7 @@ a {
     @media (max-width: calc(768px - 1px)) {
       .fullScreen h3 {
         padding: 0 40px;
-        font-size: 1.3rem;
-        padding-top: 50px; } }
+        font-size: 1.2rem; } }
   .fullScreen img {
     position: fixed;
     top: 0;
@@ -198,8 +197,13 @@ a {
     height: 100%;
     z-index: -1;
     object-fit: cover; }
+  .fullScreen .btnContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 30px 0; }
   .fullScreen button {
-    margin: 50px;
+    margin: 30px;
     padding: 10px 20px;
     background-color: #830303;
     color: white;
@@ -410,5 +414,8 @@ body {
     object-fit: cover; }
   body main {
     margin-top: 80px; }
+    @media (max-width: calc(1024px - 1px)) {
+      body main {
+        margin-top: 200px; } }
   body button {
     outline: transparent; }
