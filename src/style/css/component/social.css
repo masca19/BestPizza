@@ -1,13 +1,3 @@
-@font-face {
-  font-family: 'Adequate';
-  font-weight: normal;
-  src: url("../font/Adequate-Regular.ttf") format("truetype"); }
-
-@font-face {
-  font-family: 'Adequate';
-  font-weight: bold;
-  src: url("../font/Adequate-Bold.ttf") format("truetype"); }
-
 .social {
   display: flex;
   justify-content: space-between;
@@ -31,7 +21,8 @@
         font-size: 2.2rem; } }
     @media (max-width: calc(1024px - 1px)) {
       .social h2 {
-        width: auto; } }
+        width: auto;
+        padding: 0; } }
   .social .socialsContainer {
     display: flex;
     justify-content: center;

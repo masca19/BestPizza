@@ -8,16 +8,6 @@
   font-weight: bold;
   src: url("../font/Adequate-Bold.ttf") format("truetype"); }
 
-@font-face {
-  font-family: 'Adequate';
-  font-weight: normal;
-  src: url("../font/Adequate-Regular.ttf") format("truetype"); }
-
-@font-face {
-  font-family: 'Adequate';
-  font-weight: bold;
-  src: url("../font/Adequate-Bold.ttf") format("truetype"); }
-
 .ordinaQui {
   margin: 0 auto;
   padding: 50px 0;

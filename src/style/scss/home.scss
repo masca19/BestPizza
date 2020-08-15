@@ -1,4 +1,4 @@
-@import 'font', 'variable', 'reset';
+@import 'font', 'variable', 'reset', 'breakpoint', 'mixin';
 @import './component/header.scss';
 @import './component/sectionFullScreen.scss';
 @import './component/ourSecret.scss';
@@ -6,28 +6,45 @@
 @import './component/ordinaQui.scss';
 @import './component/footer.scss';
 
-body { 
+body {
     font-family: Adequate;
     font-size: 16px;
     margin: 0;
+}
 
-    header {
-        position: absolute;
-        top: 0;
+header {
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+}
+
+
+hr {
+    display: none;
+
+    @include mobile {
+        display: block;
+        margin-top: 230px;
+        width: 80px;
     }
 
-    img {
-        object-fit: cover;
+    @include tablet {
+        display: block;
+        margin-top: 300px;
+        width: 100px;
     }
+}
 
+img {
+    object-fit: cover;
+}
+
+button {
+    outline: transparent;
+}
+
+@include desktop {
     main {
         margin-top: 80px;
-        @include mobile-tablet {
-            margin-top: 200px; 
-        }
-    }
-
-    button {
-        outline: transparent;
     }
 }
