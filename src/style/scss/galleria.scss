@@ -1,0 +1,21 @@
+@import 'font', 'variable', 'reset', 'mixin';
+@import './component/header.scss';
+@import './component/photoGallery.scss';
+@import './component/footer.scss';
+
+body {
+    font-family: Adequate;
+    font-size: 16px;
+    margin: 0;
+}
+
+header {
+    background-color: $bordeaux;
+}
+
+h1 {
+    @include titleSection();
+    text-align: center;
+    padding-bottom: 0;
+}
+
