@@ -9,12 +9,15 @@ let stuzzicherie = '';
 let bibite = '';
 let primi_piatti = '';
 let dolci_gelati = '';
+
 function trString(row) {
     return `<tr><td class="name">${row.Nome}</td><td class="ingredienti">${row.Ingredienti}</td><td class="price">${row.Prezzo}</td></tr>`
 }
 
 fs.createReadStream(path.join(__dirname, '../../db/pizzeClassiche.csv'))
-    .pipe(csv())
+    .pipe(csv({
+        raw: true
+    }))
     .on('data', (row) => {
         pizzeClassiche += trString(row);
     })
@@ -26,7 +29,9 @@ fs.createReadStream(path.join(__dirname, '../../db/pizzeClassiche.csv'))
     });
 
 fs.createReadStream(path.join(__dirname, '../../db/pizze_giganti.csv'))
-    .pipe(csv())
+    .pipe(csv({
+        raw: true
+    }))
     .on('data', (row) => {
         pizze_giganti += trString(row);
     })
@@ -38,7 +43,9 @@ fs.createReadStream(path.join(__dirname, '../../db/pizze_giganti.csv'))
     });
 
 fs.createReadStream(path.join(__dirname, '../../db/supplementi.csv'))
-    .pipe(csv())
+    .pipe(csv({
+        raw: true
+    }))
     .on('data', (row) => {
         supplementi += `<tr><td class="nameSup">${row.Nome}</td><td class="priceSup">${row.Prezzo}</td></tr>`
     })
@@ -50,9 +57,11 @@ fs.createReadStream(path.join(__dirname, '../../db/supplementi.csv'))
     });
 
 fs.createReadStream(path.join(__dirname, '../../db/gnocco_calzoni.csv'))
-    .pipe(csv())
+    .pipe(csv({
+        raw: true
+    }))
     .on('data', (row) => {
-        gnocco_calzoni +=trString(row);
+        gnocco_calzoni += trString(row);
     })
     .on('end', () => {
         fs.writeFile(path.join(__dirname, '../../db/menuHtml/03_gnocco_calzoni.html'), gnocco_calzoni, function (err) {
@@ -62,9 +71,11 @@ fs.createReadStream(path.join(__dirname, '../../db/gnocco_calzoni.csv'))
     });
 
 fs.createReadStream(path.join(__dirname, '../../db/stuzzicherie.csv'))
-    .pipe(csv())
+    .pipe(csv({
+        raw: true
+    }))
     .on('data', (row) => {
-        stuzzicherie +=trString(row);
+        stuzzicherie += trString(row);
     })
     .on('end', () => {
         fs.writeFile(path.join(__dirname, '../../db/menuHtml/06_stuzzicherie.html'), stuzzicherie, function (err) {
@@ -74,7 +85,9 @@ fs.createReadStream(path.join(__dirname, '../../db/stuzzicherie.csv'))
     });
 
 fs.createReadStream(path.join(__dirname, '../../db/bibite.csv'))
-    .pipe(csv())
+    .pipe(csv({
+        raw: true
+    }))
     .on('data', (row) => {
         bibite += trString(row);
     })
@@ -86,7 +99,9 @@ fs.createReadStream(path.join(__dirname, '../../db/bibite.csv'))
     });
 
 fs.createReadStream(path.join(__dirname, '../../db/primi_piatti.csv'))
-    .pipe(csv())
+    .pipe(csv({
+        raw: true
+    }))
     .on('data', (row) => {
         primi_piatti += trString(row);
     })
@@ -98,7 +113,9 @@ fs.createReadStream(path.join(__dirname, '../../db/primi_piatti.csv'))
     });
 
 fs.createReadStream(path.join(__dirname, '../../db/dolci_gelati.csv'))
-    .pipe(csv())
+    .pipe(csv({
+        raw: true
+    }))
     .on('data', (row) => {
         dolci_gelati += trString(row);
     })
