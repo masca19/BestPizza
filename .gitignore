@@ -1,3 +1,6 @@
 css
-tablemenu.html
+tableMenu.html
 menu.html
+/node_modules
+/src/db/menuHtml/
+/src/db/menuHtml/*
