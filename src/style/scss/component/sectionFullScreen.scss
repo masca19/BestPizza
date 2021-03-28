@@ -1,54 +1,74 @@
-@import '../variable', '../breakpoint', '../mixin';
+@import "../variable", "../breakpoint", "../mixin";
 
 .fullScreen {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  min-height: calc(100vh - 80px);
+  color: white;
+  font-size: 1.5rem;
+
+  @include mobile-tablet {
+    justify-content: space-evenly;
+    min-height: calc(100vh - 200px);
+  }
+
+  h3,
+  p {
+    font-size: 1.8rem;
+    padding: 0 90px;
+    text-align: center;
+    @include textShadow;
+    @include mobile {
+      padding: 0 40px;
+      font-size: 1.2rem;
+    }
+  }
+
+  .fullImage {
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+  }
+
+  .btnContainer {
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    min-height: calc(100vh - 80px);
+    flex-wrap: wrap;
+    margin: 30px 0;
+  }
+
+  button {
+    margin: 30px;
+    padding: 10px 20px;
+    background-color: $bordeaux;
     color: white;
-    font-size: 1.5rem;
+    border: 0;
+    border-radius: 90px;
+  }
 
-    @include mobile-tablet {
-        justify-content: space-evenly;
-        min-height: calc(100vh - 200px);
+  .paypalContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px;
+    .svgWrapper {
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      width: 40%;
+      border-radius: 15px;
+      padding: 10px;
     }
 
-    h3 {
-        font-size: 1.8rem;
-        padding: 0 90px;
-        text-align: center;
-        @include textShadow;
-        @include mobile {
-            padding: 0 40px;
-            font-size: 1.2rem;
-        }
-    }
-    
     img {
-        position: fixed;
-        top: 0;
-        z-index: -1;
-        width: 100%;
-        height: 100%;
-        z-index: -1;
-        object-fit: cover;
+      width: 100%;
+      height: 100%;
     }
-
-    .btnContainer {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        margin: 30px 0;
-    }
-    
-    button {
-        margin: 30px;
-        padding: 10px 20px;
-        background-color: $bordeaux;
-        color: white;
-        border: 0;
-        border-radius: 90px;
-    }
+  }
 }
