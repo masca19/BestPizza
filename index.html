@@ -1,162 +1,155 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Best Pizza</title>
-    <meta
-      name="Description"
-      content="Da 13 anni Best Pizza sforna pizze per tutta Bologna. Da Via Giacomo Puccini troverete la vera pizza italiana"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="./src/media/svg//logoTitle.svg" type="image/svg" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      media="screen"
-      href="src/style/css/home.css"
-    />
-  </head>
 
-  <body>
-    <h1 hidden>Best Pizza</h1>
-    <header>
-      <div class="headerWrapper">
-        <a class="imgLogo" href="/">
-          <img src="./src/media/svg/logo.svg" alt="logo best pizza" />
-        </a>
-        <nav>
-          <ul>
-            <li><a href="menu.html">Menù</a></li>
-            <li><a href="galleria.html">Galleria</a></li>
-          </ul>
-        </nav>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Pizzeria Puccini</title>
+  <meta name="Description"
+    content="Da 13 anni Pizzeria puccini sforna pizze per tutta Bologna. Da Via Giacomo Puccini troverete la vera pizza italiana" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="./src/media/svg//logoTitle.svg" type="image/svg" />
+  <link rel="stylesheet" type="text/css" media="screen" href="src/style/css/home.css" />
+</head>
+
+<body>
+  <h1 hidden>PIZZERIA PUCCINI</h1>
+  <header>
+    <div class="headerWrapper">
+      <!-- <a class="imgLogo" href="/">
+        <img src="./src/media/svg/logo.svg" alt="logo best pizza" />
+      </a> -->
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="menu.html">Menù</a></li>
+          <li><a href="galleria.html">Galleria</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="fullScreen">
+      <img src="src/media/img/pizzeria-puccini-sfondo.jpeg" alt="pizza infornata in un forno a legna" class="fullImage" />
+      <h2 hidden>Pizzeria Puccini</h2>
+      <h1 hidden>Pizzeria Puccini</h1>
+      <img class="titleImg" src="./src/media/svg/logo.svg" alt="Pizzeria Puccini" />
+      <h3>La pizza migliore di Bologna direttamente a casa tua</h3>
+      <div class="btnContainer">
+        <button><a href="menu.html">Vai al menù</a></button>
+        <button id="orderNowBtn">Ordina ora</button>
       </div>
-    </header>
-    <hr />
-    <main>
-      <section class="fullScreen">
-        <img
-          src="src/media/img/pizzeria.jpeg"
-          alt="pizza infornata in un forno a legna"
-          class="fullImage"
-        />
-        <h2 hidden>Pizzeria Beppe</h2>
-        <h3>La pizza migliore di Bologna direttamente a casa tua</h3>
-        <div class="btnContainer">
-          <button><a href="menu.html">Vai al menù</a></button>
-          <button id="orderNowBtn">Ordina ora</button>
-        </div>
-        <div class="paypalContainer">
-          <span class="svgWrapper">
-            <img src="src/media/svg/paypal-logo.svg" alt="logo paypal" />
-          </span>
-          <p>Da oggi puoi pagare alla consegna con Paypal!</p>
-        </div>
-      </section>
-      <section class="ourSecret">
-        <h2>I nostri segreti</h2>
-        <div class="secretContainer">
-          <article>
-            <img src="src/media/img/napoli.jpeg" alt="" srcset="" />
-            <div class="titleContainer">
-              <h3>
-                La tradizione e i gli ingredienti della vera pizza Napoletana
-              </h3>
-            </div>
-          </article>
-          <article>
-            <img src="src/media/img/grano.jpg" alt="" srcset="" />
-            <div class="titleContainer">
-              <h3>Farine di qualità macinate a pietra</h3>
-            </div>
-          </article>
-          <article>
-            <img src="src/media/img/forno-a-legna.jpeg" alt="" srcset="" />
-            <div class="titleContainer">
-              <h3>Forno a legna</h3>
-            </div>
-          </article>
-        </div>
-      </section>
-      <section class="social">
-        <h2>Cosa dicono di noi</h2>
-        <div class="socialsContainer">
-          <a href="https://www.facebook.com/pizzeriabeppe">
-            <img class="facebook" src="src/media/svg/facebook.svg" alt="" />
-          </a>
-          <a
-            href="https://www.tripadvisor.it/Restaurant_Review-g187801-d6200524-Reviews-Best_Pizza-Bologna_Province_of_Bologna_Emilia_Romagna.html"
-          >
-            <img
-              class="tripadvisor"
-              src="src/media/svg/tripadvisor.svg"
-              alt=""
-            />
-          </a>
-        </div>
-      </section>
-      <section id="ordinaQui" class="ordinaQui">
-        <h2>Dove trovarci</h2>
-        <div class="allInfoWrapper">
-          <div class="infoContainer">
+      <div class="paypalContainer">
+        <span class="svgWrapper">
+          <img src="src/media/img/paypal.png" alt="paypal" />
+          <img src="src/media/img/satispay.png" alt="satispay"/>
+          <img src="src/media/img/contactless.png" alt="pagamento elettronico" />
+        </span>
+        <p>Potrai pagare alla consegna con PayPal, Satispay o direttamente con la carta!</p>
+      </div>
+      <div class="paypalContainer">
+        <span class="svgWrapper">
+          <img src="src/media/img/10-percent.png" alt="10 percento di sconto" />
+        </span>
+        <p>Se vieni a ritirarla tu in pizzeria avrai il <b>10% di sconto</b> sull'ordine!</p>
+      </div>
+    </section>
+    <section class="ourSecret">
+      <h2>I nostri segreti</h2>
+      <div class="secretContainer">
+        <article>
+          <img src="src/media/img/napoli.jpeg" alt="" srcset="" />
+          <div class="titleContainer">
+            <h3>
+              Esperienza.Tradizione. Qualità
+            </h3>
+          </div>
+        </article>
+        <article>
+          <img src="src/media/img/grano.jpg" alt="" srcset="" />
+          <div class="titleContainer">
+            <h3>Farine di qualità macinate a pietra</h3>
+          </div>
+        </article>
+        <article>
+          <img src="src/media/img/forno-a-legna.jpeg" alt="" srcset="" />
+          <div class="titleContainer">
+            <h3>Forno a legna</h3>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section class="social">
+      <h2>Cosa dicono di noi</h2>
+      <div class="socialsContainer">
+        <a href="https://www.facebook.com/pizzeriabeppe">
+          <img class="facebook" src="src/media/svg/facebook.svg" alt="" />
+        </a>
+        <a href="https://www.instagram.com/bestpizzabo/"><img class="instagram" src="src/media/img/instagram.png"
+            alt=""></a>
+        <a
+          href="https://www.tripadvisor.it/Restaurant_Review-g187801-d6200524-Reviews-Best_Pizza-Bologna_Province_of_Bologna_Emilia_Romagna.html">
+          <img class="tripadvisor" src="src/media/svg/tripadvisor.svg" alt="" />
+        </a>
+      </div>
+    </section>
+    <section id="ordinaQui" class="ordinaQui">
+      <h2>Dove trovarci</h2>
+      <div class="allInfoWrapper">
+        <div class="infoContainer">
+          <div>
+            <h4>Ordina ai numeri</h4>
             <div>
-              <h4>Ordina ai numeri</h4>
-              <div>
-                <span>Tel</span>
-                <span class="telephonNumber">051440091</span>
-              </div>
-              <div>
-                <span>Cel</span>
-                <span class="telephonNumber">392674408</span>
-              </div>
+              <h5>Cell. 3926794408</h5>
+              <h5>Cell. 3332707503</h5>
             </div>
-            <div class="hourContainer">
-              <h4>Orari</h4>
-              <p>Lunedì dalle 18 alle 22,30</p>
-              <p>
-                Dal martedì alla domenica dalle 11 alle 14,30 e dalle 18 alle
-                22,30
-              </p>
+            <div>
+
             </div>
           </div>
-          <div class="mapContainer">
-            <address>Via Giacomo Puccini 4A</address>
-            <div>
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2847.179264337129!2d11.370345615140542!3d44.47049810721486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477e2b270b58aa1b%3A0x58eab4a3c7649761!2sBest%20Pizza!5e0!3m2!1sit!2sit!4v1594689990414!5m2!1sit!2sit"
-                width="600"
-                height="450"
-                frameborder="0"
-                style="border:0;"
-                allowfullscreen=""
-                aria-hidden="false"
-                tabindex="0"
-              ></iframe>
-            </div>
+
+          <div class="hourContainer">
+            <h4>Orari</h4>
+            <p>
+              Dal martedí alla domenica dalle 18,00 alle
+              22,30
+            </p>
           </div>
         </div>
-      </section>
-    </main>
-    <footer>
-      <p>
-        Best Pizza | Via giacomo puccini 4A - Tel: 051440091 - Cel: Cel392674408
-      </p>
-    </footer>
-  </body>
+        <div class="mapContainer">
+          <address>
+            Via Giacomo Puccini, 4A
+          </address>
+          <div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2847.179264337129!2d11.370345615140542!3d44.47049810721486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477e2b270b58aa1b%3A0x58eab4a3c7649761!2sBest%20Pizza!5e0!3m2!1sit!2sit!4v1594689990414!5m2!1sit!2sit"
+              width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+              tabindex="0"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>
+      Pizzeria Puccini | Via Giacomo Puccini, 4A - Cell. 3332707503 - Cell. 3926794408
+    </p>
+  </footer>
+</body>
 
-  <script>
-    const orderNowBtn = document.getElementById("orderNowBtn");
+<script>
+  const orderNowBtn = document.getElementById("orderNowBtn");
 
-    const orderNowSection = document.getElementById("ordinaQui");
-    orderNowBtn.addEventListener("click", scrollToOrderNow);
+  const orderNowSection = document.getElementById("ordinaQui");
+  orderNowBtn.addEventListener("click", scrollToOrderNow);
 
-    function scrollToOrderNow() {
-      const positionToScroll = orderNowSection.offsetTop;
-      window.scrollTo({
-        top: positionToScroll,
-        behavior: "smooth"
-      });
-    }
-  </script>
+  function scrollToOrderNow() {
+    const positionToScroll = orderNowSection.offsetTop;
+    window.scrollTo({
+      top: positionToScroll,
+      behavior: "smooth"
+    });
+  }
+</script>
+
 </html>
